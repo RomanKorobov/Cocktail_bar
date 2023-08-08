@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cocktail bar</string>
+    <string name="my_cocktails">My cocktails</string>
+    <string name="add_your_first_cocktail_here">Add your first\ncocktail here</string>
+    <string name="cocktail_name">Cocktail name</string>
+    <string name="description">Description</string>
+    <string name="recipe">Recipe</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+</resources>

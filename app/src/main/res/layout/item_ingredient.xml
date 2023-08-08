@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:background="@drawable/borders_grey">
+
+    <TextView
+        android:id="@+id/ingredientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/didact_gothic"
+        android:textSize="16sp"
+        tools:text="Ingredient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/closeButton"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/close_24"
+        android:backgroundTint="@color/blue1"
+        app:layout_constraintStart_toEndOf="@+id/ingredientTextView"
+        app:layout_constraintTop_toTopOf="@+id/ingredientTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/ingredientTextView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
