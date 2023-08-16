@@ -24,7 +24,7 @@ class CocktailListFragment : Fragment(R.layout.fragment_cocktail_list) {
         viewModel.getList()
         binding.fab.setOnClickListener {
             val action =
-                CocktailListFragmentDirections.actionCocktailListFragmentToEditFragment(null)
+                CocktailListFragmentDirections.actionCocktailListFragmentToEditFragment(null, null)
             findNavController().navigate(action)
         }
     }

@@ -1,12 +1,35 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.CocktailBar" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue1</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.CocktailBar" parent="Base.Theme.CocktailBar" />
+
     <style name="NoUnderlineEditText" parent="Widget.AppCompat.EditText">
         <item name="android:background">@null</item>
     </style>
+
+    <style name="BorderEditTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@drawable/color_title_edittext</item>
+        <item name="boxCornerRadiusBottomEnd">56dp</item>
+        <item name="boxCornerRadiusTopEnd">56dp</item>
+        <item name="boxCornerRadiusTopStart">56dp</item>
+        <item name="boxCornerRadiusBottomStart">56dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="BorderLargeEditTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeColor">@drawable/color_description_edittext</item>
+        <item name="boxCornerRadiusBottomEnd">34dp</item>
+        <item name="boxCornerRadiusTopEnd">34dp</item>
+        <item name="boxCornerRadiusTopStart">34dp</item>
+        <item name="boxCornerRadiusBottomStart">34dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
 </resources>

@@ -26,6 +26,16 @@
             android:name="id"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_editFragment_to_dialog"
+            app:destination="@id/dialog" />
+        <argument
+            android:name="newIngredient"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_editFragment_to_cocktailListFragment"
+            app:destination="@id/cocktailListFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
@@ -39,4 +49,18 @@
             android:id="@+id/action_detailsFragment_to_editFragment"
             app:destination="@id/editFragment" />
     </fragment>
+    <dialog
+        android:id="@+id/dialog"
+        android:name="com.example.cocktailbar.edit.Dialog"
+        android:label="Dialog"
+        tools:layout="@layout/fragment_dialog">
+        <action
+            android:id="@+id/action_dialog_to_editFragment"
+            app:destination="@id/editFragment"
+            app:popUpTo="@id/cocktailListFragment" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
 </navigation>

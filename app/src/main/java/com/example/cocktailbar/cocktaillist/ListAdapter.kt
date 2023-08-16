@@ -6,6 +6,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.RequestOptions
 import com.example.cocktailbar.R
 import com.example.cocktailbar.db.Cocktail
 import com.example.cocktailbar.inflate
@@ -34,7 +35,8 @@ class ListAdapter(private val onClick: (id: Int) -> Unit) :
         fun bind(item: Cocktail) {
             currentId = item.id
             title.text = item.title
-            Glide.with(itemView).load(item.image).placeholder(R.drawable.image_photo).into(image)
+            Glide.with(itemView).load(item.image).apply(RequestOptions().centerCrop())
+                .placeholder(R.drawable.coctail_photo).into(image)
         }
 
         init {

@@ -20,4 +20,10 @@ class DetailViewModel : ViewModel() {
             item.postValue(repository.getItemById(id))
         }
     }
+
+    fun deleteCocktail(id: Int) {
+        viewModelScope.launch(Dispatchers.IO + handler) {
+            repository.deleteById(id)
+        }
+    }
 }

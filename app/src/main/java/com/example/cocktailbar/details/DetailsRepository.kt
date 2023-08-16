@@ -8,4 +8,8 @@ class DetailsRepository {
     suspend fun getItemById(id: Int): Cocktail {
         return cocktailDao.getCocktailsById(id)
     }
+
+    suspend fun deleteById(id: Int) {
+        cocktailDao.deleteCocktail(id)
+    }
 }
