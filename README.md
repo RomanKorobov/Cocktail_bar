@@ -1,5 +1,5 @@
 # Cocktail_bar
-Application for favourite coctail bars
+Application for favourite coctail drinks
 1. На данный момент реализованы функции добавления, просмотра и изменения любимых коктейлей.
 2. Для каждого коктейля есть интерактивное добавление ингредиентов в список
 3. Для хранения данных на телефоне используется Room Database
